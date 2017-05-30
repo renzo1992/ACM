@@ -16,9 +16,6 @@ class AutoLoan{
 				return binarySearchRecursive(array, x, mid - 1, right);
 			}	
 			return false;
-		
-
-
 		}
 	
 	
@@ -37,8 +34,6 @@ class AutoLoan{
 			}
 			return false;			
 		}
-	
-			
 };
 
 int main(){
