@@ -17,9 +17,16 @@ void print()
 	cout << name << endl;	
 }
 
+string compose(const string& name,const string& domain ) // & is reference to name , then name = "miguel" and domain = "gmail.com"
+{
+        return name +'@'+ domain;
+}
+
+
 int main()
 {
 	print();
+	compose("miguel", "gmail.com");
 	return 0;
 }
 
