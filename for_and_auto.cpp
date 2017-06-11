@@ -20,5 +20,6 @@ int main()
 	return 0;
 }
 
-
-
+//compiler tha type auto in g++ 11 
+//g++  c++ -std=c++0x for_and_auto.cpp
+//./a.out for_and_auto.cpp
