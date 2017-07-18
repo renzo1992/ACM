@@ -1,7 +1,11 @@
+#include <opencv2/highgui.hpp>
+#include <iostream>
 
+using namespace cv;
+using namespace std;
 
-
-double alpha;
+int main(int argc, char** argv){
+        double alpha;
         int beta;
         Mat image = imread("/home/security/project/opencv2.1/kuka.jpg");
         Mat new_image =  Mat::zeros(image.size(), image.type());
