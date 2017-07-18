@@ -132,18 +132,18 @@ int main(int argc, char** argv)
                NORMAL  = 1
              };
 
-        /** @brief constructor
+        @brief constructor
 
         These are the RNG constructors. The first form sets the state to some
         pre-defined value, equal to 2\*\*32-1 in the current implementation. The
         second form sets the state to the specified value. If you passed state=0
         , the constructor uses the above default value instead to avoid the
         singular random number sequence, consisting of all zeros.
-        */
+        
         RNG();
         /**@overload
         @param state 64-bit value used to initialize the RNG.
-        */
+        
         RNG(uint64 state);
         /**The method updates the state using the MWC algorithm and returns the
     
@@ -234,7 +234,7 @@ int main(int argc, char** argv)
                 pt1.y = rng.uniform(y1, y2);
                 pt2.x = rng.uniform(x1, x2);
                 pt2.y = rng.uniform(y1, y2);
-                /*
+                /************************************************************************
                 @brief Draws a line segment connecting two points.
 
                 The function line draws the line segment between pt1 and pt2 points in the image. The line is
@@ -249,7 +249,7 @@ int main(int argc, char** argv)
                 @param thickness Line thickness.
                 @param lineType Type of the line, see cv::LineTypes.
                 @param shift Number of fractional bits in the point coordinates.
-                */
+                ***********************************************************************************/
                 line( image , pt1, pt2, randomColor(rng), rng.uniform(1, 10), lineType);
                 imshow(wndname, image);
                 if(waitKey(DELAY) >= 0)
