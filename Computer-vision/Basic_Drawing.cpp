@@ -141,11 +141,11 @@ int main(int argc, char** argv)
         singular random number sequence, consisting of all zeros.
         
         RNG();
-        /**@overload
+        @overload
         @param state 64-bit value used to initialize the RNG.
         
         RNG(uint64 state);
-        /**The method updates the state using the MWC algorithm and returns the
+        The method updates the state using the MWC algorithm and returns the
     
         **********************************************************/
     
